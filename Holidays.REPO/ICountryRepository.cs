@@ -13,6 +13,8 @@ namespace Holidays.REPO
         void Update(Country country);
         void Delete(int ID);
         Task<List<Country>> GetCountries();
+        Task<List<Country>> GetAllCountries();
+
         Task<Country> GetCountryByCode(string Code);
 
         Task<Country> GetCountryById(int ID);

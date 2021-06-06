@@ -24,10 +24,6 @@ namespace Holidays.API
             CreateMap<Country, CountryUpdateDto>();
             CreateMap<CountryUpdateDto, Country>();
 
-            CreateMap<CountryApiDto, object>()
-            .ForMember("name", cfg => { cfg.MapFrom(jo => jo.name })
-            .ForMember("alpha2code", cfg => { cfg.MapFrom(jo => jo.alpha2code })
-            .ForMember("capital", cfg => { cfg.MapFrom(jo => jo.capital });
         }
     }
 }

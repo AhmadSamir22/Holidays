@@ -34,6 +34,10 @@ namespace Holidays.REPO
         {
             return await _context.Countries.Where(c => c.Deleted == false).ToListAsync();
         }
+        public async Task<List<Country>> GetAllCountries()
+        {
+            return await _context.Countries.ToListAsync();
+        }
 
         public async Task<Country> GetCountryByCode(string Code)
         {
