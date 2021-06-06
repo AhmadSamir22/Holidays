@@ -1,7 +1,10 @@
+using Holidays.DAL;
+using Holidays.REPO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -11,6 +14,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Holidays.API
 {
@@ -26,12 +31,23 @@ namespace Holidays.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string conn = Configuration.GetConnectionString("Default");
+
+            
 
             services.AddControllers();
+            services
+                .AddMvc()
+                .AddJsonOptions(opt => opt.JsonSerializerOptions.PropertyNamingPolicy
+                    = null);
+            services.AddAutoMapper(typeof(Startup));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Holidays.API", Version = "v1" });
             });
+            services.AddDbContext<HolidaysContext>(options =>
+                options.UseMySQL(conn));
+            services.AddScoped<UnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

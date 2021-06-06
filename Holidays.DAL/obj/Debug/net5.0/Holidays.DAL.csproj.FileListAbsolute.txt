@@ -1,0 +1,15 @@
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\bin\Debug\net5.0\Holidays.DAL.deps.json
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\bin\Debug\net5.0\Holidays.DAL.runtimeconfig.json
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\bin\Debug\net5.0\Holidays.DAL.runtimeconfig.dev.json
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\bin\Debug\net5.0\Holidays.DAL.dll
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\bin\Debug\net5.0\ref\Holidays.DAL.dll
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\bin\Debug\net5.0\Holidays.DAL.pdb
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\obj\Debug\net5.0\Holidays.DAL.csprojAssemblyReference.cache
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\obj\Debug\net5.0\Holidays.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\obj\Debug\net5.0\Holidays.DAL.AssemblyInfoInputs.cache
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\obj\Debug\net5.0\Holidays.DAL.AssemblyInfo.cs
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\obj\Debug\net5.0\Holidays.DAL.csproj.CoreCompileInputs.cache
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\obj\Debug\net5.0\Holidays.DAL.dll
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\obj\Debug\net5.0\ref\Holidays.DAL.dll
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\obj\Debug\net5.0\Holidays.DAL.pdb
+D:\Personal Work\CountryHolidays\Holidays\Holidays.DAL\obj\Debug\net5.0\Holidays.DAL.genruntimeconfig.cache
